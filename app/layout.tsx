@@ -14,15 +14,15 @@ const fragmentMono = Fragment_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "La Gasolinera · Ingenieros de IA dentro de tu equipo",
+  title: "La Gasolinera · AI engineers inside your team",
   description:
-    "Ingenieros de IA que trabajan dentro de tu equipo: construimos los flujos de trabajo, lanzamos contigo y nos quedamos para mantener tus lanzamientos rápidos.",
+    "Forward-deployed AI engineers who work inside your team: we build the workflows, ship with you, and stay to keep you shipping fast.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
-      lang="es"
+      lang="en"
       className={`${inter.variable} ${fragmentMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">{children}</body>

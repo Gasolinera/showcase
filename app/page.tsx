@@ -1,70 +1,70 @@
-const CONTACT_EMAIL = "hola@lagasolinera.ai";
-const CONTACT_HREF = `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent("Hablemos 20 minutos")}`;
+const CONTACT_EMAIL = "hello@lagasolinera.ai";
+const CONTACT_HREF = `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent("20-minute intro call")}`;
 
 const NAV_LINKS = [
-  { href: "#problema", label: "El problema" },
+  { href: "#problem", label: "The problem" },
   { href: "#sprint", label: "Sprint" },
   { href: "#roles", label: "Roles" },
 ];
 
-const METRICS = ["Tiempo de ciclo", "PRs por semana", "Tiempo de review", "Tickets en producción"];
+const METRICS = ["Cycle time", "PRs per week", "Review time", "Tickets shipped to production"];
 
 const SIGNALS = [
   {
-    title: "Licencias sin impacto",
-    body: "Pagáis Copilot, Cursor o Claude Code, pero el uso es bajo y nadie mide qué ha cambiado.",
+    title: "Licenses without impact",
+    body: "You pay for Copilot, Cursor or Claude Code, but usage is low and nobody measures what changed.",
   },
   {
-    title: "Lanzamientos lentos",
-    body: "Code reviews eternas, tests manuales, un CI lento y código legacy que nadie quiere tocar.",
+    title: "Slow shipping",
+    body: "Endless code reviews, manual testing, a slow CI and legacy code nobody wants to touch.",
   },
   {
-    title: "Un puesto que no se cubre",
-    body: "La oferta de AI engineer lleva meses abierta y la presión por resultados no espera.",
+    title: "A role you can't fill",
+    body: "Your AI engineer opening has been up for months, and the pressure for results won't wait.",
   },
   {
-    title: "Una iniciativa sin plan",
-    body: "La dirección ha anunciado una iniciativa de IA, pero nadie sabe qué cambiar el lunes.",
+    title: "An initiative without a plan",
+    body: "Leadership announced an AI initiative, but nobody knows what to change on Monday.",
   },
 ];
 
 const SPRINT_STEPS = [
   {
-    title: "Medimos",
-    body: "Acordamos con vosotros la métrica que importa y tomamos la línea base.",
+    title: "Measure",
+    body: "We agree with you on the metric that matters and take a baseline.",
   },
   {
-    title: "Montamos el flujo",
-    body: "Estándares, configuración de las herramientas de IA, code review y tests, dentro de vuestro repo.",
+    title: "Set up the workflow",
+    body: "Standards, AI tooling setup, code review and testing, right inside your repo.",
   },
   {
-    title: "Lanzamos",
-    body: "Sacamos tickets reales a producción con el nuevo flujo, en pair programming con el equipo.",
+    title: "Ship",
+    body: "We ship real tickets to production with the new workflow, pair programming with your team.",
   },
   {
-    title: "Medimos otra vez",
-    body: "Comparamos antes y después. Los flujos se quedan, y son vuestros.",
+    title: "Measure again",
+    body: "We compare before and after. The workflows stay, and they're yours.",
   },
 ];
 
 const NEXT_STEPS = [
-  { title: "Embedded", body: "Construimos dentro de vuestros equipos." },
-  { title: "Transfer", body: "Formamos a vuestra gente en los nuevos roles." },
-  { title: "Retainer", body: "Nos quedamos mientras evolucionan las herramientas." },
+  { title: "Embedded", body: "We build inside your teams." },
+  { title: "Transfer", body: "We train your people into the new roles." },
+  { title: "Retainer", body: "We stay on as the tools evolve." },
 ];
 
 const ROLES = [
   {
     title: "AI Engagement Manager",
-    body: "Traduce problemas de negocio en soluciones con IA y valida ideas con pruebas de concepto rápidas.",
+    body: "Turns business problems into AI solutions and validates ideas with fast proofs of concept.",
   },
   {
     title: "Forward Deployed Engineer",
-    body: "Entra en varios equipos y construye software listo para producción en distintos repos.",
+    body: "Embeds across teams and builds production-ready software in different repos.",
   },
   {
     title: "AI Platform Engineer",
-    body: "Define la gobernanza y los estándares de IA que comparten todos los equipos.",
+    body: "Defines the AI governance and standards that every team shares.",
   },
 ];
 
@@ -100,7 +100,7 @@ function Header() {
           href={CONTACT_HREF}
           className="rounded-full bg-foreground px-4 py-2 text-sm font-medium text-background transition-opacity hover:opacity-85"
         >
-          Hablemos
+          Let&apos;s talk
         </a>
       </div>
     </header>
@@ -117,31 +117,31 @@ function Hero() {
       <div className="relative mx-auto max-w-6xl px-6 pt-24 pb-20 md:pt-36 md:pb-28">
         <Eyebrow>Forward-deployed AI engineers</Eyebrow>
         <h1 className="mt-6 max-w-4xl text-5xl font-semibold leading-[1.05] tracking-tight md:text-7xl">
-          Ingenieros de IA <span className="text-muted">dentro de tu equipo.</span>
+          AI engineers <span className="text-muted">inside your team.</span>
         </h1>
         <p className="mt-6 max-w-2xl text-lg leading-relaxed text-muted md:text-xl">
-          Construimos los flujos de trabajo, lanzamos contigo y nos quedamos para mantener tus
-          lanzamientos rápidos mientras evolucionan las herramientas.
+          We build the workflows, ship with you, and stay to keep you shipping fast as the tools
+          evolve.
         </p>
         <div className="mt-10 flex flex-wrap gap-3">
           <a
             href={CONTACT_HREF}
             className="rounded-full bg-foreground px-6 py-3 text-sm font-medium text-background transition-opacity hover:opacity-85"
           >
-            Reserva 20 minutos
+            Book 20 minutes
           </a>
           <a
             href="#sprint"
             className="rounded-full border border-line bg-surface px-6 py-3 text-sm font-medium transition-colors hover:border-foreground"
           >
-            Ver el sprint
+            See the sprint
           </a>
         </div>
       </div>
 
       <div className="relative mx-auto max-w-6xl px-6 pb-24">
         <p className="font-mono text-xs uppercase tracking-widest text-muted">
-          Lo que medimos, antes y después
+          What we measure, before and after
         </p>
         <div className="mt-4 grid grid-cols-2 overflow-hidden rounded-2xl border border-line bg-line gap-px md:grid-cols-4">
           {METRICS.map((metric) => (
@@ -157,11 +157,11 @@ function Hero() {
 
 function Problem() {
   return (
-    <section id="problema" className="scroll-mt-16 border-t border-line">
+    <section id="problem" className="scroll-mt-16 border-t border-line">
       <div className="mx-auto max-w-6xl px-6 py-24">
-        <Eyebrow>El problema</Eyebrow>
+        <Eyebrow>The problem</Eyebrow>
         <h2 className="mt-4 max-w-2xl text-3xl font-semibold tracking-tight md:text-5xl">
-          ¿Te suena?
+          Sound familiar?
         </h2>
         <div className="mt-12 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
           {SIGNALS.map((signal) => (
@@ -183,14 +183,14 @@ function Sprint() {
         <div>
           <Eyebrow>AI Engineering Sprint</Eyebrow>
           <h2 className="mt-4 text-3xl font-semibold tracking-tight md:text-5xl">
-            Cuatro semanas con un equipo real.
+            Four weeks with a real team.
           </h2>
           <p className="mt-6 max-w-md leading-relaxed text-muted">
-            Ni slides ni roadmaps. Entramos con un problema de ingeniería concreto y medible, y lo
-            resolvemos con vosotros, en vuestro código.
+            No slides, no roadmaps. We pick one concrete, measurable engineering problem and solve it
+            with you, in your codebase.
           </p>
           <ul className="mt-8 flex flex-wrap gap-2">
-            {["4 semanas", "Precio fijo", "Tu equipo, tu código"].map((tag) => (
+            {["4 weeks", "Fixed price", "Your team, your code"].map((tag) => (
               <li
                 key={tag}
                 className="rounded-full border border-line px-3 py-1 font-mono text-xs text-muted"
@@ -218,7 +218,7 @@ function Sprint() {
 
       <div className="mx-auto max-w-6xl px-6 pb-24">
         <p className="font-mono text-xs uppercase tracking-widest text-muted">
-          Si funciona, seguimos
+          If it works, we keep going
         </p>
         <div className="mt-4 grid gap-4 md:grid-cols-3">
           {NEXT_STEPS.map((step) => (
@@ -237,13 +237,13 @@ function Roles() {
   return (
     <section id="roles" className="scroll-mt-16 border-t border-line">
       <div className="mx-auto max-w-6xl px-6 py-24">
-        <Eyebrow>Hacia dónde va tu equipo</Eyebrow>
+        <Eyebrow>Where your team is heading</Eyebrow>
         <h2 className="mt-4 max-w-3xl text-3xl font-semibold tracking-tight md:text-5xl">
-          Tres roles para trabajar con IA.
+          Three roles for working with AI.
         </h2>
         <p className="mt-6 max-w-2xl leading-relaxed text-muted">
-          Estos perfiles van a escasear. La mejor forma de tenerlos es formarlos dentro, a partir de
-          vuestros propios desarrolladores. Venimos a que seáis vosotros.
+          These profiles will be scarce. The best way to have them is to grow them in-house, from
+          your own developers. We&apos;re here to make that happen.
         </p>
         <div className="mt-12 grid gap-4 md:grid-cols-3">
           {ROLES.map((role) => (
@@ -263,17 +263,17 @@ function FinalCta() {
     <section className="px-6 pb-24">
       <div className="mx-auto max-w-6xl rounded-3xl bg-foreground px-8 py-16 text-background md:px-16 md:py-24">
         <blockquote className="max-w-3xl text-2xl font-medium leading-snug tracking-tight md:text-4xl">
-          «¿Lleváis meses buscando un AI engineer? Mientras lo encontráis, trabajamos nosotros, y lo
-          formamos cuando llegue.»
+          “Been looking for an AI engineer for months? We&apos;ll do the work until you find one, and
+          train them when they arrive.”
         </blockquote>
         <p className="mt-8 max-w-xl leading-relaxed text-background/60">
-          Cuéntanos cómo trabaja hoy tu equipo. Una llamada de 20 minutos, sin compromiso.
+          Tell us how your team works today. A 20-minute call, no strings attached.
         </p>
         <a
           href={CONTACT_HREF}
           className="mt-8 inline-block rounded-full bg-background px-6 py-3 text-sm font-medium text-foreground transition-opacity hover:opacity-85"
         >
-          Reserva 20 minutos
+          Book 20 minutes
         </a>
       </div>
     </section>

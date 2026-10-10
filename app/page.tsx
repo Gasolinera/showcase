@@ -288,7 +288,7 @@ function Footer() {
         <a href={CONTACT_HREF} className="transition-colors hover:text-foreground">
           {CONTACT_EMAIL}
         </a>
-        <p>© 2026 Vogata SL</p>
+        <p>© 2026 Oarwise SL</p>
       </div>
     </footer>
   );
@@ -309,7 +309,7 @@ function Logo() {
         <path d="M5 5l6 7-6 7" stroke="currentColor" />
         <path d="M13 5l6 7-6 7" className="stroke-accent" />
       </svg>
-      Vogata
+      Oarwise
     </a>
   );
 }

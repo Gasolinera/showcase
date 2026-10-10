@@ -14,7 +14,7 @@ const fragmentMono = Fragment_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Vogata · AI engineers inside your team",
+  title: "Oarwise · AI engineers inside your team",
   description:
     "Forward-deployed AI engineers who work inside your team: we build the workflows, ship with you, and stay to keep you shipping fast.",
 };

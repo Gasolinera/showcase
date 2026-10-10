@@ -297,8 +297,17 @@ function Footer() {
 function Logo() {
   return (
     <a href="#" className="flex items-center gap-2 font-semibold tracking-tight text-foreground">
-      <svg viewBox="0 0 24 24" aria-hidden className="h-5 w-5 fill-accent">
-        <path d="M12 2.5c-3.6 4.6-6.5 8.4-6.5 11.8a6.5 6.5 0 0 0 13 0C18.5 10.9 15.6 7.1 12 2.5z" />
+      <svg
+        viewBox="0 0 24 24"
+        aria-hidden
+        className="h-5 w-5"
+        fill="none"
+        strokeWidth={3.2}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      >
+        <path d="M5 5l6 7-6 7" stroke="currentColor" />
+        <path d="M13 5l6 7-6 7" className="stroke-accent" />
       </svg>
       Vogata
     </a>

@@ -1,4 +1,4 @@
-const CONTACT_EMAIL = "hello@lagasolinera.ai";
+const CONTACT_EMAIL = "hello@oarwise.ai";
 const CONTACT_HREF = `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent("20-minute intro call")}`;
 
 const NAV_LINKS = [
@@ -7,7 +7,7 @@ const NAV_LINKS = [
   { href: "#roles", label: "Roles" },
 ];
 
-const METRICS = ["Cycle time", "PRs per week", "Review time", "Tickets shipped to production"];
+const METRICS = ["Cycle time", "PRs per week", "Review time", "Tickets shipped"];
 
 const SIGNALS = [
   {
